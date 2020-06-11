@@ -25,7 +25,7 @@ CURL used to include a list of accepted CAs, but no longer bundles ANY CA certs.
 ; absolute path.
 ;curl.cainfo =
 ```
-##How to Intall on your Project via Composer
+## How to Intall on your Project via Composer
 ```
 composer install geniusreferrals/geniusreferrals
 ```
