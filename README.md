@@ -435,7 +435,6 @@ function patchAdvocate(
 $accountSlug = 'account_slug';
 $advocateToken = 'advocate_token';
 $advocatePatchForm = new AdvocatePatchForm();
-$advocatePatchForm = array($advocatePatchForm);
 
 $result = $advocates->patchAdvocate($accountSlug, $advocateToken, $advocatePatchForm);
 
