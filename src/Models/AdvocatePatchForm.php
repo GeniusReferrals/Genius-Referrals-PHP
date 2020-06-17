@@ -87,6 +87,12 @@ class AdvocatePatchForm implements JsonSerializable
     public $token;
 
     /**
+     * The advocate's code
+     * @var string $token public property
+     */
+    public $code;
+
+    /**
      * Constructor to set initial or default values of member properties
      * @param string  $name             Initialization value for $this->name
      * @param string  $lastname         Initialization value for $this->lastname
@@ -99,6 +105,7 @@ class AdvocatePatchForm implements JsonSerializable
      * @param string  $metadata         Initialization value for $this->metadata
      * @param bool    $canRefer         Initialization value for $this->canRefer
      * @param string  $token            Initialization value for $this->token
+     * @param string  $code            Initialization value for $this->code
      */
     public function __construct()
     {
@@ -114,6 +121,7 @@ class AdvocatePatchForm implements JsonSerializable
             $this->metadata         = func_get_arg(8);
             $this->canRefer         = func_get_arg(9);
             $this->token            = func_get_arg(10);
+            $this->code            = func_get_arg(11);
         }
     }
 
@@ -135,6 +143,7 @@ class AdvocatePatchForm implements JsonSerializable
         $json['metadata']          = $this->metadata;
         $json['can_refer']         = $this->canRefer;
         $json['token']             = $this->token;
+        $json['code']             = $this->code;
 
         return $json;
     }
